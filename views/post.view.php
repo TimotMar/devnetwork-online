@@ -11,7 +11,7 @@
 <p><a href="../index.post.php">Retour à la liste des billets</a></p>
 <div class="news">
     <h3> <!-- recovery of the datas in the DB  -->
-        <?= htmlspecialchars($post['title']) ?>
+        <strong><div class="titrepost"><?= htmlspecialchars($post['title']) ?></div></strong>
         <em>le <?= $post['creation_date_fr'] ?> par <?= $post['pseudo']  ?></em>
     </h3>
     <?= nl2br(htmlspecialchars($post['chapo'])) ?>
