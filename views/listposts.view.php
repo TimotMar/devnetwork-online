@@ -50,7 +50,7 @@ while ($data = $posts->fetch()) {
   <div class="container">
     <div class="news">
         <h3>
-            <a href="../index.post.php?action=post&amp;id=<?= $data['id'] ?>"><?= htmlspecialchars($data['title']) ?></a>
+            <strong><div class="titrepost"><a href="../index.post.php?action=post&amp;id=<?= $data['id'] ?>"><?= htmlspecialchars($data['title']) ?></a></div></strong>
             <em>le <?= $data['creation_date_fr'] ?> par <?= htmlspecialchars($data['pseudo']) ?></em>
         </h3>
         <?= nl2br(htmlspecialchars($data['chapo'])) ?>
