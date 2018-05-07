@@ -19,10 +19,9 @@
         <?= nl2br(htmlspecialchars($post['content'])) ?>
     </p>
 </div>
-<h2 style="padding-left: 100px;">Ajouter un commentaire</h2>
- <!-- form to add the comments depending if you are logged or not -->
 <?php if(is_logged_in() ): ?>
-   
+   <h2 style="padding-left: 100px;">Ajouter un commentaire</h2>
+ <!-- form to add the comments depending if you are logged or not -->
 <form action="index.post.php?action=addComment&amp;id=<?= $post['id'] ?>" method="post">
 	<div style="padding-left:100px;">
     <div style="width: 11%;">
