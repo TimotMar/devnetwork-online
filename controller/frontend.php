@@ -10,7 +10,7 @@ require_once('model/CommentManager.php');
 require_once('model/UserManager.php');
 //all functions management
 
-
+//loading the view of the list of all posts
 function listPosts()
 {
     $postManager = new \Devnetwork\Blog\Model\PostManager();
@@ -19,12 +19,14 @@ function listPosts()
     require('views/listposts.view.php');
 }
 
+// loading the home page of the website
 function accueil()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();
     require('views/index.view.php');
 }
 
+// loading the view of the list of all the users
 function liste()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();
@@ -33,6 +35,7 @@ function liste()
     require('views/list_users.view.php');
 }
 
+//loading the view of the register page
 function inscription()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();
@@ -40,6 +43,7 @@ function inscription()
     require('views/register.view.php');
 }
 
+//redirection after the login system
 function logintheUser()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();
@@ -48,6 +52,7 @@ function logintheUser()
     require('views/login.view.php');
 }
 
+//loading the view of the login page
 function login()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();
@@ -55,6 +60,7 @@ function login()
     require('views/login.view.php');
 }
 
+//loading the view of the single post page
 function post()
 {
     $postManager = new \Devnetwork\Blog\Model\PostManager();
@@ -66,6 +72,7 @@ function post()
     require('views/post.view.php');
 }
 
+//loading the view of the profile page
 function profile()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();
@@ -74,6 +81,7 @@ function profile()
     require('views/profile.view.php');
 }
 
+//loading the view of the modifying page
 function modifier()
 {
     $postManager = new \Devnetwork\Blog\Model\PostManager();
@@ -83,6 +91,7 @@ function modifier()
     require('views/modifier.view.php');
 }
 
+//redirection after the deleting of a post
 function delete()
 {
     $postManager = new \Devnetwork\Blog\Model\PostManager();
@@ -91,6 +100,8 @@ function delete()
     require('views/listposts.view.php');
 }
 
+
+//loading the view of the edit user page
 function change()
 {
     $userManager = new \Devnetwork\Blog\Model\UserManager();

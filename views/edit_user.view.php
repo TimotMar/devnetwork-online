@@ -34,7 +34,7 @@
                             <div class="form-group">
                                 <label for="city">Ville<span class="text-danger">*</span></label>
                                 <input type="text" name="city" id="city" class="form-control"
-                                       value ="<?= $profile['city']/* si on a déjà rentré le nom : on récup, sinon valeur en BDD*/?>"
+                                       value ="<?= $profile['city']?>"
                                        required="required"/>
                             </div>
                         </div>
