@@ -84,7 +84,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="available_for_hiring">
-                                    <input type="checkbox" name="available_for_hiring"
+                                    <input type="checkbox" name="available_for_hiring" id="available_for_hiring"
                                         <?= $profile['available_for_hiring'] ? "checked" : ""?>/>
                                     Disponible pour emploi?
                                 </label>
