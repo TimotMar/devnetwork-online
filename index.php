@@ -1,7 +1,7 @@
 <?php
 /*
 *This file is the index of the website
-*
+*It is used to user every functions linked to the website
 *
 **/
 session_start();

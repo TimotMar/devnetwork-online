@@ -1,13 +1,12 @@
 <?php
 /*
 *This file is the index of the post system
-*
+*It includes all the functions linked to the blog / post system
 *
 **/
 session_start();
 include('controller/includes/constants.php');
 require("controller/backend.php");
-require("views/index.post.view.php");
 require('controller/frontend.php');
 //includes of all the exceptions of the post system
 

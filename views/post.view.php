@@ -62,7 +62,7 @@ if ((is_logged_in()) && ($_SESSION['pseudo'] == $post['pseudo']) || ($_SESSION['
 <?php endif; ?> 
 
     </div>
-    <?php if (is_logged_in() && $_SESSION['pseudo'] == $post['pseudo'] && $comment['publication'] == 0 || $_SESSION['user_id'] == "4") : ?>
+    <?php if ((is_logged_in() && $_SESSION['pseudo'] == $post['pseudo'] && $comment['publication'] == 0) || $_SESSION['user_id'] == "4") : ?>
 <em><a href="index.post.php?action=validateComment&amp;id=<?= $comment['id'] ?>">Valider</a></em>
 <em><a href="index.post.php?action=deleteComment&amp;id=<?= $comment['id'] ?>">Supprimer</a></em>
 <?php endif ; ?>

@@ -46,7 +46,6 @@
 <?php //getting all the posts with the differents functions (change, delete...) only if you are logged
 while ($data = $posts->fetch()) {
 ?>
-<div class="shadow">
   <div class="container">
     <div class="news">
         <h3>
@@ -66,7 +65,6 @@ while ($data = $posts->fetch()) {
             <?php endif ; ?>
         </p>
     </div>
-   </div>
 </div>
 <?php
 }
