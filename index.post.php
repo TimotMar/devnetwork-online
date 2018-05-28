@@ -1,13 +1,12 @@
 <?php
 /*
 *This file is the index of the post system
-*
+*It includes all the functions linked to the blog / post system
 *
 **/
 session_start();
 include('controller/includes/constants.php');
-require("controller/includes/functions.php");
-require("views/index.post.view.php");
+require("controller/backend.php");
 require('controller/frontend.php');
 //includes of all the exceptions of the post system
 
@@ -25,7 +24,7 @@ try {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 if (!empty($_POST['author']) && !empty($_POST['comment'])) {
                     addComment($_GET['id'], $_POST['author'], $_POST['comment'], $_POST['post_mail'], $_POST['post_pseudo']);
-                } 
+                }
             } else {
                 throw new Exception('Aucun identifiant de billet envoyé');
             }
